@@ -1,0 +1,70 @@
+https://cursos.alura.com.br/category/front-end/angular
+https://cursos.alura.com.br/course/angular-fundamentos
+
+https://angular.io/cli
+Para instalarmos o Angular CLI, precisamos do npm, um gerenciador de pacotes do Node.j
+	npm --version
+Verificaremos se o npm está instalado com npm --version 
+no cmd, como administrados, executar npm install -g @angular/cli
+	ng --version
+entrar na pasta desejada, via prompt de comando,  e criar o projeto 
+	ng new alurapic
+	cd alurapic
+	ng serve --open (para subir o nosso servidor local)
+**Para possíveis erros, seguir os passos: https://cursos.alura.com.br/forum/topico-erro-apos-gerar-o-comando-ng-serve-open-98810
+
+******** para reiniciar uma aplicação, entrar no terminal e executar o comando 
+		ng serve --open
+
+-----------------------------------------------------------------------------------------------------------
+1 - BEM COMEÇADO, METADE FEITO 
+
+Instalação do Angular CLI
+Criação de um novo projeto com a ferramenta e como executá-lo
+Compreensão da estrutura criada
+Data binding através de Angular Expression
+	Utilizamos {{ }} dentro de tags e [ ] para atributos
+Data binding de atributos
+Convenções adotadas até o momento
+	Para arquivos usamos menubar.component.ts, no nome usamos MenubarComponent
+
+-----------------------------------------------------------------------------------------------------------
+2 - CRIANDO O PRIMEIRO COMPONENTE
+
+Como o arquivo bootstrap.css pode ser adicionado ao processo de build do Angular CLI.
+	No terminal, instalar o Bootstrap 
+		npm install bootstrap@4.1.1
+	Carregamos CSSs ou scripts globais no angular.json, que possui uma chave denominada build, dentro do qual está styles
+		Incluir o caminho completo do Bootstrap na pasta "node_modules":
+			,"./node_modules/bootstrap/dist/css/bootstrap.min.css"
+Criação de um novo componente
+	Em "app", criarmos uma nova pasta chamada "photo"
+		Nela, criaremos os arquivos photo.component.ts e photo.component.html
+A importância de declarar o componente em um módulo
+	Em app.module.ts, incluir o módulo criado (AppComponent)
+Como passar dados para o componente através das inbound properties
+Criação de um módulo e boas práticas
+	 Precisamos explicitar que tais propriedades podem receber um parâmetro externo 
+		incluiremos @Input(), que faz parte do angular/core
+A diretiva *ngFor
+	 O Angular possui esta diretiva que se encarrega de iterar uma lista e repetir o componente para nós.
+	
+-----------------------------------------------------------------------------------------------------------
+3 - INTEGRAÇÃO COM WEB API'S
+
+Consumir uma Web API através do serviço HttpClient
+Injeção de dependência e a importância de providers
+Isolamento da lógica de acesso à Web API em classe de serviço
+Tipagem do retorno da API através de interface e sua vantagem
+Componentes possuem ciclo de vida
+A fase OnInit
+
+-----------------------------------------------------------------------------------------------------------
+4 - SINGLE PAGE APPLICATIONS E ROTAS
+-----------------------------------------------------------------------------------------------------------
+5 - NOVO COMPONENTE, NOVOS CONCEITOS
+-----------------------------------------------------------------------------------------------------------
+6 - MELHORANDO A EXPERIÊNCIA DO USUÁRIO
+-----------------------------------------------------------------------------------------------------------
+7 - LAPIDANDO AINDA MAIS NOSSA APLICAÇÃO
+
