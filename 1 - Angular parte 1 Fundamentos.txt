@@ -53,6 +53,15 @@ A diretiva *ngFor
 3 - INTEGRAÇÃO COM WEB API'S
 
 Consumir uma Web API através do serviço HttpClient
+	Fazer o download da api e copiar a pasta para o local do projeto
+	Abrir um novo terminal, Entrar na pasta da api, e digitar os comando:
+		npm install
+		npm start
+		Testar no navegador http://localhost:3000/flavio/photos
+		***Se der erro, entrar na pasta alurapic e executar os seguintes procedimentos:
+			https://cursos.alura.com.br/forum/topico-erro-na-api-sqlite3-143486
+			Após, abrir um novo terminal, entrar na pasta api e npm install e npm start
+
 Injeção de dependência e a importância de providers
 Isolamento da lógica de acesso à Web API em classe de serviço
 Tipagem do retorno da API através de interface e sua vantagem
